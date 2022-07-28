@@ -23,7 +23,8 @@ namespace class_kullanımı
         {
             Console.WriteLine("Kapılar Kilitleniyor..");
 
-            
+           
+
         }
     }
 }
