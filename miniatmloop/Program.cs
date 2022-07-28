@@ -28,7 +28,7 @@ namespace miniatmloop
                 switch (secim)
                 {
                     case "1":
-                        Console.WriteLine("Bakiyeniz:" + bakiye);
+                        Console.WriteLine("Bakiyeniz: " + bakiye);
                         break;
 
                     case "2":
