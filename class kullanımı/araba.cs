@@ -13,6 +13,11 @@ namespace class_kullanımı
 
         public string arabaRengi;
 
+        public araba()
+        {
+
+        }
+
 
         public void motorlistir()
         {
