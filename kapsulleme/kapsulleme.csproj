@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B3623296-E384-4277-8ECD-FF1FB15C2D27}</ProjectGuid>
+    <ProjectGuid>{3A1B7194-F826-4371-B549-FB2981BA6F8C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>miniatmloop</RootNamespace>
-    <AssemblyName>miniatmloop</AssemblyName>
+    <RootNamespace>kapsulleme</RootNamespace>
+    <AssemblyName>kapsulleme</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="ogrenci.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
