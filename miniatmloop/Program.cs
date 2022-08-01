@@ -8,6 +8,7 @@ namespace miniatmloop
 {
     internal class Program
     {
+        
         static void Main(string[] args)
         {
             int bakiye = 700;
@@ -53,6 +54,8 @@ namespace miniatmloop
                     default:
                         Console.WriteLine("lütfen işlem seç");
                         break;
+
+                        
 
 
                 }
