@@ -37,7 +37,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sinemabufesatis", "sinemabu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "switchcasesembolegore", "switchcasesembolegore\switchcasesembolegore.csproj", "{00A77770-1ADA-46BA-B820-50E737B56419}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bilgiyarismasi", "bilgiyarismasi\bilgiyarismasi.csproj", "{BFC86634-1EFD-4842-AFD6-6B6A30E59E2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bilgiyarismasi", "bilgiyarismasi\bilgiyarismasi.csproj", "{BFC86634-1EFD-4842-AFD6-6B6A30E59E2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "donguler", "donguler\donguler.csproj", "{88919306-30F0-48A8-9188-6D590D6CDA96}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +119,10 @@ Global
 		{BFC86634-1EFD-4842-AFD6-6B6A30E59E2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFC86634-1EFD-4842-AFD6-6B6A30E59E2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFC86634-1EFD-4842-AFD6-6B6A30E59E2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88919306-30F0-48A8-9188-6D590D6CDA96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88919306-30F0-48A8-9188-6D590D6CDA96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88919306-30F0-48A8-9188-6D590D6CDA96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88919306-30F0-48A8-9188-6D590D6CDA96}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
