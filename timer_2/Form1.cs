@@ -8,6 +8,11 @@ namespace timer_2
         }
         int saat=0,dakika=0, saniye=0;
 
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void label1_Click(object sender, EventArgs e)
         {
 
