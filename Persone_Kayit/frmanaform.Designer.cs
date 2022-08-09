@@ -1,6 +1,6 @@
 ﻿namespace Persone_Kayit
 {
-    partial class Form1
+    partial class frmanaform
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmanaform));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtmeslek = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -47,12 +47,13 @@
             this.txtid = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.BtnGuncelle = new System.Windows.Forms.Button();
             this.btnistatistik = new System.Windows.Forms.Button();
             this.btntemizle = new System.Windows.Forms.Button();
+            this.btngrafikler = new System.Windows.Forms.Button();
             this.btnsil = new System.Windows.Forms.Button();
             this.btnkaydet = new System.Windows.Forms.Button();
             this.btnlistele = new System.Windows.Forms.Button();
-            this.btngrafikler = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.peridDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -234,8 +235,10 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.BtnGuncelle);
             this.groupBox2.Controls.Add(this.btnistatistik);
             this.groupBox2.Controls.Add(this.btntemizle);
+            this.groupBox2.Controls.Add(this.btngrafikler);
             this.groupBox2.Controls.Add(this.btnsil);
             this.groupBox2.Controls.Add(this.btnkaydet);
             this.groupBox2.Controls.Add(this.btnlistele);
@@ -246,18 +249,29 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "İşlemler";
             // 
+            // BtnGuncelle
+            // 
+            this.BtnGuncelle.Location = new System.Drawing.Point(6, 120);
+            this.BtnGuncelle.Name = "BtnGuncelle";
+            this.BtnGuncelle.Size = new System.Drawing.Size(94, 33);
+            this.BtnGuncelle.TabIndex = 7;
+            this.BtnGuncelle.Text = "Güncelle";
+            this.BtnGuncelle.UseVisualStyleBackColor = true;
+            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click_1);
+            // 
             // btnistatistik
             // 
-            this.btnistatistik.Location = new System.Drawing.Point(6, 181);
+            this.btnistatistik.Location = new System.Drawing.Point(6, 191);
             this.btnistatistik.Name = "btnistatistik";
             this.btnistatistik.Size = new System.Drawing.Size(94, 33);
             this.btnistatistik.TabIndex = 6;
             this.btnistatistik.Text = "İstatistik";
             this.btnistatistik.UseVisualStyleBackColor = true;
+            this.btnistatistik.Click += new System.EventHandler(this.btnistatistik_Click);
             // 
             // btntemizle
             // 
-            this.btntemizle.Location = new System.Drawing.Point(6, 144);
+            this.btntemizle.Location = new System.Drawing.Point(6, 149);
             this.btntemizle.Name = "btntemizle";
             this.btntemizle.Size = new System.Drawing.Size(94, 33);
             this.btntemizle.TabIndex = 5;
@@ -265,18 +279,28 @@
             this.btntemizle.UseVisualStyleBackColor = true;
             this.btntemizle.Click += new System.EventHandler(this.btntemizle_Click);
             // 
+            // btngrafikler
+            // 
+            this.btngrafikler.Location = new System.Drawing.Point(6, 224);
+            this.btngrafikler.Name = "btngrafikler";
+            this.btngrafikler.Size = new System.Drawing.Size(94, 33);
+            this.btngrafikler.TabIndex = 7;
+            this.btngrafikler.Text = "Grafikler";
+            this.btngrafikler.UseVisualStyleBackColor = true;
+            // 
             // btnsil
             // 
-            this.btnsil.Location = new System.Drawing.Point(6, 107);
+            this.btnsil.Location = new System.Drawing.Point(6, 90);
             this.btnsil.Name = "btnsil";
             this.btnsil.Size = new System.Drawing.Size(94, 33);
             this.btnsil.TabIndex = 4;
             this.btnsil.Text = "Sil";
             this.btnsil.UseVisualStyleBackColor = true;
+            this.btnsil.Click += new System.EventHandler(this.btnsil_Click);
             // 
             // btnkaydet
             // 
-            this.btnkaydet.Location = new System.Drawing.Point(6, 65);
+            this.btnkaydet.Location = new System.Drawing.Point(6, 51);
             this.btnkaydet.Name = "btnkaydet";
             this.btnkaydet.Size = new System.Drawing.Size(94, 33);
             this.btnkaydet.TabIndex = 3;
@@ -293,15 +317,6 @@
             this.btnlistele.Text = "Listele";
             this.btnlistele.UseVisualStyleBackColor = true;
             this.btnlistele.Click += new System.EventHandler(this.btnlistele_Click);
-            // 
-            // btngrafikler
-            // 
-            this.btngrafikler.Location = new System.Drawing.Point(302, 244);
-            this.btngrafikler.Name = "btngrafikler";
-            this.btngrafikler.Size = new System.Drawing.Size(94, 33);
-            this.btngrafikler.TabIndex = 7;
-            this.btngrafikler.Text = "Grafikler";
-            this.btngrafikler.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
@@ -419,7 +434,6 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.btngrafikler);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
@@ -477,6 +491,7 @@
         private System.Windows.Forms.DataGridViewCheckBoxColumn perDurumDataGridViewCheckBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn perMeslekDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button BtnGuncelle;
     }
 }
 

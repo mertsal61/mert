@@ -11,9 +11,9 @@ using System.Data.SqlClient;
 
 namespace Persone_Kayit
 {
-    public partial class Form1 : Form
+    public partial class frmanaform : Form
     {
-        public Form1()
+        public frmanaform()
         {
             InitializeComponent();
         }
@@ -113,6 +113,38 @@ namespace Persone_Kayit
             {
                 radioButton2.Checked = true;
             }
+        }
+
+        private void btnsil_Click(object sender, EventArgs e)
+        {
+            baglanti.Open();
+            SqlCommand komutsil = new SqlCommand("Delete From Tbl_Personel where Perid=@k1", baglanti);
+            komutsil.Parameters.AddWithValue("@k1", txtid.Text);
+            komutsil.ExecuteNonQuery();
+            baglanti.Close();
+            MessageBox.Show("Kayıt Silindi");
+        }
+
+        private void BtnGuncelle_Click_1(object sender, EventArgs e)
+        {
+            baglanti.Open();
+            SqlCommand komutguncelle = new SqlCommand("Update Tbl_Personel Set PerAd=@a1,PerSoyad=@a2,PerSehir=@a3,PerMaas=@a4,PerDurum=@a5,PerMeslek=@a6 where Perid=@a7", baglanti);
+            komutguncelle.Parameters.AddWithValue("@a1", txtad.Text);
+            komutguncelle.Parameters.AddWithValue("@a2", txtsoyad.Text);
+            komutguncelle.Parameters.AddWithValue("@a3", cmbsehir.Text);
+            komutguncelle.Parameters.AddWithValue("@a4", maskmaas.Text);
+            komutguncelle.Parameters.AddWithValue("@a5", label8.Text);
+            komutguncelle.Parameters.AddWithValue("@a6", txtmeslek.Text);
+            komutguncelle.Parameters.AddWithValue("@a7", txtid.Text);
+            komutguncelle.ExecuteNonQuery();
+            baglanti.Close();
+            MessageBox.Show("Personel Bilgi Güncellendi");
+        }
+
+        private void btnistatistik_Click(object sender, EventArgs e)
+        {
+            frmistatistik fr=new frmistatistik();
+            fr.Show();
         }
     }
 }
