@@ -300,7 +300,7 @@
             // 
             // btnkaydet
             // 
-            this.btnkaydet.Location = new System.Drawing.Point(6, 51);
+            this.btnkaydet.Location = new System.Drawing.Point(5, 51);
             this.btnkaydet.Name = "btnkaydet";
             this.btnkaydet.Size = new System.Drawing.Size(94, 33);
             this.btnkaydet.TabIndex = 3;
@@ -425,7 +425,7 @@
             this.label8.Text = "label8";
             this.label8.TextChanged += new System.EventHandler(this.label8_TextChanged);
             // 
-            // Form1
+            // frmanaform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -436,7 +436,7 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Form1";
+            this.Name = "frmanaform";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
