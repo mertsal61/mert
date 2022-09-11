@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmgiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmgiris.Designer.cs">
+      <DependentUpon>frmgiris.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmanaform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmanaform.resx">
       <DependentUpon>frmanaform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmgiris.resx">
+      <DependentUpon>frmgiris.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmgrafikler.resx">
       <DependentUpon>frmgrafikler.cs</DependentUpon>
